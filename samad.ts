@@ -38,6 +38,34 @@ console.log(`${famous_person} once said, ${quote}`)
 // question 6
 const whitespacepersonName:string = "\t samad \n"
 console.log(whitespacepersonName)
+let stripingSpace: string = whitespacepersonName.trim()
+console.log(stripingSpace)
+
+// queston 7 + 8 adding line in each result
+console.log(5 + 3 + '<br> <hr>' );
+console.log(10 - 2 + '<br> <hr>'); 
+console.log(4 * 2 + '<br> <hr>'); 
+console.log(16 / 2 + '<br> <hr>'); 
+
+// question 9
+let favoriteNumber: number = 3328222026;
+let textmessage: string = `my favorite number ${favoriteNumber}`
+console.log(textmessage);
+
+// questin 10
+// define a variable & its type string assing value in it samade747
+let githubusername:string = "samade747"
+// defne a variable & type assing value
+let password:string = '*********'
+
+
+// question 11
+// creating a variable using array 
+let friendsarr: string[] = ['samad', 'manahil', 'fatimah', 'dhedhi']
+// for loop, acceess each element in list at once a time each, using length
+for (let i = 0; i < friendsarr.length; i++){
+    console.log(friendsarr[i])
+}
 
 
 
