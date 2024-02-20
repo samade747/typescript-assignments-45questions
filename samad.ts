@@ -72,10 +72,50 @@ console.log(`${friendsarr[i]} i love you`)
 }
 
 // question 13
+// delcare a var assign value define type with array value
+let transportation: string[] = ["motorcycle", "car", "bicycle", "scooter"]
+// now transportation par for each signle par bari bari chalega single item return krega 
+transportation.forEach(mode => {
+    console.log(`i would like to own a ${mode}`)
+});
 
 
+// question 14
+
+let invitaionList: string[] = ['samad', 'fatimah', 'iqra']
+invitaionList.forEach(person =>{
+    console.log(`Dear ${person}  invited to dinner at my home`)
+})
 
 
+// Question 15
+const unabletoAttend: string = 'Fatimah'
+// filter create a new array remove unable to attend person 
+const newInvitaionList = invitaionList.filter(element => element !== 'fatimah')
+console.log(newInvitaionList)
+newInvitaionList.push("halima")
+console.log(newInvitaionList)
+
+newInvitaionList.forEach(person1 => {
+    console.log(`Dear ${person1} invited to dinner at my home rightnow`)
+})
 
 
+// question 16
+console.log(`found new table with bigger space for dinning inviting new guest`)
+// adding the yumna from starting
+newInvitaionList.unshift('yumna')
+// if we give postive number (5.8) return 5 if we give (-3.2) return -4 if we give (10) return 10
+// using Math.floor becasue want to calculate the index number
+let addingMiddle = Math.floor(newInvitaionList.length / 2)
+// splice method remove elemnt replace or add new element 
+//                      start, deletecount, additemname
+newInvitaionList.splice(addingMiddle, 0, 'anum')
+
+newInvitaionList.forEach(person3 => {
+    console.log(`Dear ${person3} invited to dinner at my home rightnow`)
+})
+
+
+// question 17
 
