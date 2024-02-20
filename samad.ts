@@ -20,6 +20,7 @@ function toTitleCase(str: string): string {
     // map return a new array map return each element one by one, also with index number
     // slice take index, length 
     // join mai add hogye ga baqi space ke badh
+    //split space ke badh word bnadeta hai   slice return new arry with take 2 condition index & length       
     return str.split(' ').map(word => word.slice(0, 1).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
 
 }
@@ -125,4 +126,11 @@ while (newInvitaionList.length > 2) {
     console.log(`sorry ${removedGuest} sory we have no space the invitaion is cancel will invite you soon`)
 }
 
+console.log(`Remaining guest hey you are still invited ${newInvitaionList}`)
+
+newInvitaionList.pop()
 console.log(`Remaining guest ${newInvitaionList}`)
+newInvitaionList.pop()
+console.log(`empty array list ${newInvitaionList}`)
+
+// Question 18 

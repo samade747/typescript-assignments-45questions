@@ -92,4 +92,8 @@ while (newInvitaionList.length > 2) {
     var removedGuest = newInvitaionList.pop();
     console.log("sorry ".concat(removedGuest, " sory we have no space the invitaion is cancel will invite you soon"));
 }
+console.log("Remaining guest hey you are still invited ".concat(newInvitaionList));
+newInvitaionList.pop();
+console.log("Remaining guest ".concat(newInvitaionList));
+newInvitaionList.pop();
 console.log("Remaining guest ".concat(newInvitaionList));
