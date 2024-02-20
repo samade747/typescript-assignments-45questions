@@ -118,4 +118,11 @@ newInvitaionList.forEach(person3 => {
 
 
 // question 17
+console.log(`my new dinner table wont arrived on time so no space for more guests, i have space for only 2 guests `)
+console.log(newInvitaionList)
+while (newInvitaionList.length > 2) {
+    let removedGuest = newInvitaionList.pop()
+    console.log(`sorry ${removedGuest} sory we have no space the invitaion is cancel will invite you soon`)
+}
 
+console.log(`Remaining guest ${newInvitaionList}`)

@@ -85,3 +85,11 @@ newInvitaionList.splice(addingMiddle, 0, 'anum');
 newInvitaionList.forEach(function (person3) {
     console.log("Dear ".concat(person3, " invited to dinner at my home rightnow"));
 });
+// question 17
+console.log("my new dinner table wont arrived on time so no space for more guests, i have space for only 2 guests ");
+console.log(newInvitaionList);
+while (newInvitaionList.length > 2) {
+    var removedGuest = newInvitaionList.pop();
+    console.log("sorry ".concat(removedGuest, " sory we have no space the invitaion is cancel will invite you soon"));
+}
+console.log("Remaining guest ".concat(newInvitaionList));
