@@ -65,7 +65,14 @@ let friendsarr: string[] = ['samad', 'manahil', 'fatimah', 'dhedhi']
 // for loop, acceess each element in list at once a time each, using length
 for (let i = 0; i < friendsarr.length; i++){
     console.log(friendsarr[i])
+
+
+// question 12
+console.log(`${friendsarr[i]} i love you`)
 }
+
+// question 13
+
 
 
 
