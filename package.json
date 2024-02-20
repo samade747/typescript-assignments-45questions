@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.11.19"
+  },
+  "dependencies": {
+    "node": "^21.6.2",
+    "nodemon": "^3.0.3"
+  }
+}
