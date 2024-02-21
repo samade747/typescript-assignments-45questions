@@ -182,7 +182,19 @@ console.log(`printing the number of people invited ${excercise18invited}`)
 let listOfCountries: string[] = ["USA", "Canada", "Brazil", "China", "India", "Germany"];
 let listOfRivers: string[] = ["2driya", "3dariya", "4darya"];
 
-// creating object
+// creating object question 21
+let countries = [
+    {
+        name: "USA",
+        capital: "Washington",
+        language: "English"
+    },
+    {
+        name: "Canada",
+        capital: "otwa",
+        language: "English, French"
+    }
+]
 
 
 
