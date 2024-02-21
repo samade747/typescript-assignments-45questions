@@ -134,3 +134,68 @@ newInvitaionList.pop()
 console.log(`empty array list ${newInvitaionList}`)
 
 // Question 18 
+let likeToVisit: string[] = ['MADINAH', 'MAKKAH', 'USA', 'UK', 'UAE', 'CHINA']
+// printing the array in non alfabatical as it is
+for(let i = 0; i < likeToVisit.length; i++){
+    console.log(likeToVisit[i])
+}
+//copying the array with slice method its copy the array original remain the same using slice method
+// slice method return a new array, and oriigianl array remain same, take index number & length .slice(starting index, length) or if we give an empty .slice() its copy whole array return new array 
+let sortingArray: string[] = likeToVisit.slice();
+
+// now sorting the above copied array
+let sortedArray = sortingArray.sort();
+
+
+for(let i = 0; i < sortedArray.length; i++){
+    console.log(`sorted array ${sortedArray[i]}`)
+}
+
+// showing original array
+for(let i = 0; i < likeToVisit.length; i++){
+    console.log(`original array ${likeToVisit[i]}`)
+}
+
+// printing reverse alphabtcal order
+// copying the original array 
+let reverseAlfabaticalOrder: string[] = likeToVisit.slice()
+console.log(reverseAlfabaticalOrder)
+// first we sort the array then reverse 
+reverseAlfabaticalOrder = reverseAlfabaticalOrder.sort()
+// now reverse 
+reverseAlfabaticalOrder = reverseAlfabaticalOrder.reverse()
+console.log(`reverse sorted array ${reverseAlfabaticalOrder}`)
+// again reverse to sho back to origianl condition
+reverseAlfabaticalOrder = reverseAlfabaticalOrder.sort()
+reverseAlfabaticalOrder = reverseAlfabaticalOrder.reverse()
+console.log(`again set to orgianl condition the reverse sorted array ${reverseAlfabaticalOrder}`)
+
+// question 19
+// printing the 14 
+let excercise14invited = invitaionList.length
+console.log(`printing the number of people invited ${excercise14invited}`)
+let excercise18invited = newInvitaionList.length
+console.log(`printing the number of people invited ${excercise18invited}`)
+
+// question 20
+// creatng list of mountains, rivers, countries, cities, languages
+let listOfCountries: string[] = ["USA", "Canada", "Brazil", "China", "India", "Germany"];
+let listOfRivers: string[] = ["2driya", "3dariya", "4darya"];
+
+// creating object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

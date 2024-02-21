@@ -13,6 +13,7 @@ function toTitleCase(str) {
     // map return a new array map return each element one by one, also with index number
     // slice take index, length 
     // join mai add hogye ga baqi space ke badh
+    //split space ke badh word bnadeta hai   slice return new arry with take 2 condition index & length       
     return str.split(' ').map(function (word) { return word.slice(0, 1).toUpperCase() + word.slice(1).toLowerCase(); }).join(' ');
 }
 // question 4
@@ -96,4 +97,41 @@ console.log("Remaining guest hey you are still invited ".concat(newInvitaionList
 newInvitaionList.pop();
 console.log("Remaining guest ".concat(newInvitaionList));
 newInvitaionList.pop();
-console.log("Remaining guest ".concat(newInvitaionList));
+console.log("empty array list ".concat(newInvitaionList));
+// Question 18 
+var likeToVisit = ['MADINAH', 'MAKKAH', 'USA', 'UK', 'UAE', 'CHINA'];
+// printing the array in non alfabatical as it is
+for (var i = 0; i < likeToVisit.length; i++) {
+    console.log(likeToVisit[i]);
+}
+//copying the array with slice method its copy the array original remain the same using slice method
+// slice method return a new array, and oriigianl array remain same, take index number & length .slice(starting index, length) or if we give an empty .slice() its copy whole array return new array 
+var sortingArray = likeToVisit.slice();
+// now sorting the above copied array
+var sortedArray = sortingArray.sort();
+for (var i = 0; i < sortedArray.length; i++) {
+    console.log("sorted array ".concat(sortedArray[i]));
+}
+// showing original array
+for (var i = 0; i < likeToVisit.length; i++) {
+    console.log("original array ".concat(likeToVisit[i]));
+}
+// printing reverse alphabtcal order
+// copying the original array 
+var reverseAlfabaticalOrder = likeToVisit.slice();
+console.log(reverseAlfabaticalOrder);
+// first we sort the array then reverse 
+reverseAlfabaticalOrder = reverseAlfabaticalOrder.sort();
+// now reverse 
+reverseAlfabaticalOrder = reverseAlfabaticalOrder.reverse();
+console.log("reverse sorted array ".concat(reverseAlfabaticalOrder));
+// again reverse to sho back to origianl condition
+reverseAlfabaticalOrder = reverseAlfabaticalOrder.sort();
+reverseAlfabaticalOrder = reverseAlfabaticalOrder.reverse();
+console.log("again set to orgianl condition the reverse sorted array ".concat(reverseAlfabaticalOrder));
+// question 19
+// printing the 14 
+var excercise14invited = invitaionList.length;
+console.log("printing the number of people invited ".concat(excercise14invited));
+var excercise18invited = newInvitaionList.length;
+console.log("printing the number of people invited ".concat(excercise18invited));
