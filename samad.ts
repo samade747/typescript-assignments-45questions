@@ -182,7 +182,7 @@ console.log(`printing the number of people invited ${excercise18invited}`)
 let listOfCountries: string[] = ["USA", "Canada", "Brazil", "China", "India", "Germany"];
 let listOfRivers: string[] = ["2driya", "3dariya", "4darya"];
 
-// creating object question 21
+// creating object question 21 22
 let countries = [
     {
         name: "USA",
@@ -196,6 +196,31 @@ let countries = [
     }
 ]
 
+// question 22 Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
+
+let intentionalErr = [1, 2, 3, 4, 5]
+
+let accessIndex = 2;
+if(accessIndex >= 0 && accessIndex < intentionalErr.length){
+    let value = intentionalErr[accessIndex]
+    console.log(`value index ${accessIndex} is ${value}`)
+} else {
+    console.log(`Error index is intentaoinl error`)
+}
+
+// Question 23 Conditional Tests 
+
+let car: string = 'sabaru';
+let zero: number = 0;
+// checking condition with data type 
+console.log(car === "sabaru" ? true : false)
+console.log(car === "tesla" ? true : false)
+console.log(car != "mercedesbenz" ? true : false)
+console.log(car !== "sabaru" ? true : false)
+console.log(zero === 0 ? true : false)
+console.log(zero != 0 ? true : false)
+
+// question 24 
 
 
 
