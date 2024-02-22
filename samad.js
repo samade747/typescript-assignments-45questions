@@ -135,3 +135,61 @@ var excercise14invited = invitaionList.length;
 console.log("printing the number of people invited ".concat(excercise14invited));
 var excercise18invited = newInvitaionList.length;
 console.log("printing the number of people invited ".concat(excercise18invited));
+// question 20
+// creatng list of mountains, rivers, countries, cities, languages
+var listOfCountries = ["USA", "Canada", "Brazil", "China", "India", "Germany"];
+var listOfRivers = ["2driya", "3dariya", "4darya"];
+// creating object question 21 22
+var countries = [
+    {
+        name: "USA",
+        capital: "Washington",
+        language: "English"
+    },
+    {
+        name: "Canada",
+        capital: "otwa",
+        language: "English, French"
+    }
+];
+// question 22 Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
+var intentionalErr = [1, 2, 3, 4, 5];
+var accessIndex = 2;
+if (accessIndex >= 0 && accessIndex < intentionalErr.length) {
+    var value = intentionalErr[accessIndex];
+    console.log("value index ".concat(accessIndex, " is ").concat(value));
+}
+else {
+    console.log("Error index is intentaoinl error");
+}
+// Question 23 Conditional Tests 
+var car = 'sabaru';
+var zero = 0;
+// checking condition with data type 
+console.log(car === "sabaru" ? true : false);
+console.log(car === "tesla" ? true : false);
+console.log(car != "mercedesbenz" ? true : false);
+console.log(car !== "sabaru" ? true : false);
+console.log(zero === 0 ? true : false);
+console.log(zero != 0 ? true : false);
+// question 24 
+// Tests for equality and inequality with strings
+console.log('pakistan' === 'pakistan');
+console.log('pakistan' !== 'pakistan');
+// lower case function
+console.log('SAMAD'.toLowerCase() === 'samad');
+// number test
+var num1 = 5;
+var num2 = 9;
+console.log(num1 < num2);
+console.log(num1 >= num2);
+// && OR || 
+var x = 50;
+var a = 49;
+// && operator must check both cond. 
+console.log(x > 49 && a < 50);
+console.log(x > 49 || a < 50);
+var fruits = ['samad', 'abcd', 'bcdef'];
+console.log(fruits.includes('samad'));
+console.log(fruits.includes('damas'));
+// question 25
