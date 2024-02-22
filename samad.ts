@@ -221,8 +221,32 @@ console.log(zero === 0 ? true : false)
 console.log(zero != 0 ? true : false)
 
 // question 24 
+// Tests for equality and inequality with strings
+console.log('pakistan' === 'pakistan')
+console.log('pakistan' !== 'pakistan');
 
+// lower case function
+console.log( 'SAMAD'.toLowerCase() === 'samad')
 
+// number test
+let num1: number = 5
+let num2: number = 9
+
+console.log(num1 < num2)
+console.log(num1 >= num2)
+
+// && OR || 
+let x: number = 50
+let a: number = 49
+// && operator must check both cond. 
+console.log(x > 49 && a < 50)
+console.log(x > 49 || a < 50)
+
+let fruits: string[] = ['samad', 'abcd', 'bcdef']
+console.log(fruits.includes('samad'))
+console.log(fruits.includes('damas'))
+
+// question 25
 
 
 
