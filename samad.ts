@@ -444,11 +444,42 @@ makeshirt('large', 'we love you');
 
 // Question 38
 
+function describe_city(city: string, country: string = 'default_country'): void {
+    console.log(`${city} is in ${country}.`);
+}
+
+// Calling the function for three different cities
+describe_city('Karachi', 'Pakistan');
+describe_city('New York', 'USA');
+describe_city('Tokyo'); 
+
+// Question 39
+
+function city_country(city: string, country: string): string {
+    return `${city}, ${country}`;
+}
+
+let city1 = city_country('Lahore', 'Pakistan');
+let city2 = city_country('New York', 'USA');
+let city3 = city_country('Tokyo', 'Japan');
+
+console.log(city1);
+console.log(city2);
+console.log(city3);
 
 
+// Question 40
+
+function creatingalbuma(artist: string, title: string, tracks?: number): { artist: string, title: string, tracks?: number } {
+    let album: { artist: string, title: string, tracks?: number } = { artist: artist, title: title };
+    if (tracks !== undefined) {
+        album.tracks = tracks;
+    }
+    return album;
+}
 
 
-
+// question 41
 
 
 
