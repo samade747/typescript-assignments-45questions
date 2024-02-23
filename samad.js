@@ -426,5 +426,77 @@ make_great(magicians);
 // Calling the show_magiciansh function to print the modified list of magicians
 show_magiciansh(magicians);
 // Queston 43
-var copymagicines = __spreadArray([], magiciansa, true);
-console.log("copying the array of magicines ".concat(copymagicines));
+// create  a function define 
+//                          jis array par function chala hai 
+function show_magiciansnew(magicianswe) {
+    // for ka function ha let suppose ke jis array mai magicinswe 
+    for (var _i = 0, magicianswe_1 = magicianswe; _i < magicianswe_1.length; _i++) {
+        var magician = magicianswe_1[_i];
+        console.log(magician);
+    }
+}
+function make_greatnew(magicianswe) {
+    var great_magicianswe = [];
+    for (var _i = 0, magicianswe_2 = magicianswe; _i < magicianswe_2.length; _i++) {
+        var magician = magicianswe_2[_i];
+        // push the value by end 
+        great_magicianswe.push("the Great ".concat(magician));
+    }
+    // return the value jahan call hoga 
+    return great_magicianswe;
+}
+// aray of magincine name 
+var magicianswe = ['Harry', 'farry ', 'very', 'cary'];
+// calling the makegreatnew with a copy of array
+var great_magicians = make_greatnew(__spreadArray([], magicianswe, true));
+// showing the old array 
+show_magiciansnew(magicianswe);
+// showing the new array
+show_magicians(great_magicians);
+// Quesion 44
+function sandWichmaker() {
+    var items = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        items[_i] = arguments[_i];
+    }
+    console.log("summary of Sandwich");
+    if (items.length === 0) {
+        console.log("You haven't selected any items for your sandwich.");
+    }
+    else {
+        console.log("You ordeer a sandwich of follwing item.");
+        for (var _a = 0, items_1 = items; _a < items_1.length; _a++) {
+            var item = items_1[_a];
+            console.log("".concat(item));
+        }
+    }
+}
+sandWichmaker("chicke", "cheez");
+sandWichmaker("alo", "cheez");
+sandWichmaker("fries", "cheez");
+// Question 45
+// manufacturer name (string), a model name (string)
+function storeCarInfo(manufacturer, modelName) {
+    var options = [];
+    for (var _i = 2; _i < arguments.length; _i++) {
+        options[_i - 2] = arguments[_i];
+    }
+    // Create an object 
+    var carInfo = {
+        // Setting the manufacturer property to the provided manufacturer name
+        manufacturer: manufacturer,
+        // Setting the modelName property to the provided model name
+        modelName: modelName
+    };
+    // Iterate over each option provided
+    for (var _a = 0, options_1 = options; _a < options_1.length; _a++) {
+        var option = options_1[_a];
+        // Set the property in the carInfo object corresponding to the key provided in the option tuple
+        // to the value provided in the option tuple
+        carInfo[option[0]] = option[1];
+    }
+    // Return the carInfo object containing all the car information
+    return carInfo;
+}
+var car1 = storeCarInfo('Toyota', 'Camry', ['color', 'blue'], ['year', 2022]);
+console.log(car1);

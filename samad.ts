@@ -549,3 +549,48 @@ show_magicians(great_magicians)
 
 
 // Quesion 44
+
+function sandWichmaker(...items: string[]): void {
+    console.log("summary of Sandwich")
+    if(items.length === 0 ){
+        console.log("You haven't selected any items for your sandwich.");
+    } else {
+        console.log("You ordeer a sandwich of follwing item.");
+        for(let item of items){
+            console.log(`${item}`)
+        }
+    }
+}
+
+sandWichmaker("chicke", "cheez",)
+sandWichmaker("alo", "cheez",)
+sandWichmaker("fries", "cheez",)
+
+
+// Question 45
+
+
+// manufacturer name (string), a model name (string)
+function storeCarInfo(manufacturer: string, modelName: string, ...options: [string, any][]): { manufacturer: string, modelName: string, [key: string]: any } {
+    // Create an object 
+    let carInfo: { manufacturer: string,
+                    modelName: string,
+                    [key: string]: any } = {
+        // Setting the manufacturer property to the provided manufacturer name
+        manufacturer: manufacturer,
+        // Setting the modelName property to the provided model name
+        modelName: modelName
+    };
+
+    // Iterate over each option provided
+    for (let option of options) {
+        // Set the property in the carInfo object corresponding to the key provided in the option tuple
+        // to the value provided in the option tuple
+        carInfo[option[0]] = option[1];
+       }
+    // Return the carInfo object containing all the car information
+    return carInfo;
+}
+
+let car1 = storeCarInfo('Toyota', 'Camry', ['color', 'blue'], ['year', 2022]);
+console.log(car1);
