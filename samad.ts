@@ -516,34 +516,29 @@ show_magiciansh(magicians);
 
 
 // Queston 43
-// copying by speread operter khol ke rakh deta hai ...
-// let copymagicines = [...magiciansa]
-
-// console.log(`copying the array of magicines ${copymagicines}`)
-
-// function make_greats(copymagicines: string[]): string[] {
-//       for (let magician of copymagicines) {
-//         great_magicians.push(`the Great ${magician}`);
-//     }
-//     return great_magicians;
-// }
 // create  a function define 
+//                          jis array par function chala hai 
 function show_magiciansnew(magicianswe: string[]): void {
+// for ka function ha let suppose ke jis array mai magicinswe 
     for (let magician of magicianswe) {
         console.log(magician);
     }
 }
 
 function make_greatnew(magicianswe: string[]): string[] {
+
     let great_magicianswe: string[] = [];
     for (let magician of magicianswe) {
+// push the value by end 
         great_magicianswe.push(`the Great ${magician}`);
     }
+    // return the value jahan call hoga 
     return great_magicianswe;
 }
-
+// aray of magincine name 
 let magicianswe: string[] = ['Harry', 'farry ', 'very', 'cary'];
 
+// calling the makegreatnew with a copy of array
 let great_magicians: string[] = make_greatnew([...magicianswe])
 
 // showing the old array 
@@ -553,3 +548,4 @@ show_magiciansnew(magicianswe)
 show_magicians(great_magicians)
 
 
+// Quesion 44
