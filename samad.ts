@@ -347,7 +347,105 @@ for (let i = 0; i < usernames.length; i++) {
     }
 }
 
-// question 31
+// question 31 //
+
+let usernamescheck: string[] = [];
+
+if (usernamescheck.length === 0) {
+    console.log("We need to find some users!");
+} else {
+    for (let username of usernamescheck) {
+        if (username === 'admin') {
+            console.log("Hello admin, would you like to see a status report?");
+        } else {
+            console.log(`Hello ${username}, thank you for logging in again.`);
+        }
+    }
+}
+
+// question 32 // 
+
+let current_users: string[] = ['john', 'alice', 'bob', 'mary', 'jane'];
+let new_users: string[] = ['eric', 'ALICE', 'john', 'michael', 'susan'];
+
+for (let new_user of new_users) {
+    let is_existing = current_users.some(user => user.toLowerCase() === new_user.toLowerCase());
+    if (is_existing) {
+        console.log(`Sorry, the username "${new_user}" is already taken. Please enter a new username.`);
+    } else {
+        console.log(`Congratulations! The username "${new_user}" is available.`);
+    }
+}
+
+// Question 33 //
+
+let numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+for (let number of numbers) {
+    let ordinalEnding: string;
+
+    if (number === 1) {
+        ordinalEnding = 'st';
+    } else if (number === 2) {
+        ordinalEnding = 'nd';
+    } else if (number === 3) {
+        ordinalEnding = 'rd';
+    } else {
+        ordinalEnding = 'th';
+    }
+
+    console.log(`${number}${ordinalEnding}`);
+}
+
+// Queston 34
+
+let favorite_pizzas: string[] = ['Pepperoni', 'Margherita', 'BBQ Chicken'];
+
+for (let pizza of favorite_pizzas) {
+    console.log(`I like ${pizza} pizza.`);
+}
+
+console.log("I really love pizza!");
+
+// Question 35
+
+let animals: string[] = ['Dog', 'Cat', 'Rabbit'];
+
+for (let animal of animals) {
+    console.log(`A ${animal.toLowerCase()} would make a great pet.`);
+}
+
+console.log("Any of these animals would make a great pet!");
+
+// Question 36 
+
+function make_shirt(size: string, message: string): void {
+    console.log(`The shirt size is ${size} and the message printed on it is: "${message}".`);
+}
+
+// Calling the function
+make_shirt('XL', 'Keep calm and code on');
+
+
+// Question 37
+
+function makeshirt(size: string = 'large', message: string = 'I love TypeScript'): void {
+    console.log(`The shirt size is ${size} and the message printed on it is: "${message}".`);
+}
+
+// Making small shirt with default message
+makeshirt('large', 'we love you');
+
+// Making medium shirt with default message
+// makeshirt('medium');
+
+// Making shirt of any size with a different message
+// makeshirt('small', 'Hello World!');
+
+// Question 38
+
+
+
 
 
 
