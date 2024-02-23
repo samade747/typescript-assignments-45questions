@@ -247,6 +247,110 @@ console.log(fruits.includes('samad'))
 console.log(fruits.includes('damas'))
 
 // question 25
+// alein shotdown in a game
+// union type variable hold 3 values
+
+let alein_color: 'green' | "yellow" | "red";
+alein_color = "green"
+// alein_color = "yellow"
+let points: number = 5
+
+// checking green color
+if (alein_color === "green"){
+    console.log(`congratulations you just earned ${points} points`)    
+} 
+
+
+// question 26
+
+let greenPoints: number = 5
+let anotherPoints: number = 10
+
+let alien_color1: string = "green"
+let alein_colorshoot: string = "green"
+if( alien_color1 === alein_colorshoot ) {    
+    console.log(`congratulations you have earned ${greenPoints}`)
+} else {
+    console.log(`congratulations you have earned ${anotherPoints}`)
+}
+
+// question 27 
+// if-else chain.
+
+let alien_colorh: 'green' | 'yellow' | 'red';
+let gpoints: number = 5
+let ypoints: number = 5
+let rpoints: number = 5
+
+alien_colorh = 'green';
+// alien_colorh = 'yellow';
+// alien_colorh = 'red';
+
+if (alien_colorh === 'green') {
+    console.log(`Congratulations! You just earned ${gpoints} points for shooting the green alien.`);
+} else if (alien_colorh === 'yellow') {    
+    console.log(`Congratulations! You just earned ${ypoints} points for shooting the yellow alien.`);
+} else if (alien_colorh === 'red') {    
+    console.log(`Congratulations! You just earned ${rpoints} points for shooting the red alien.`);
+}
+
+// question 28
+let age: number = 5
+
+if (age < 0) {
+    console.log("Error: Age cannot be negative.");
+} else if (age < 2) {
+    console.log("The person is a baby.");
+} else if (age < 13) {
+    console.log("The person is a child.");
+} else if (age < 20) {
+    console.log("The person is a teenager.");
+} else if (age < 65) {
+    console.log("The person is an adult.");
+} else {
+    console.log("The person is a senior citizen.");
+}
+
+
+// question 29
+
+let favorite_fruits: string[] = ['banana', 'apple', 'strawberry'];
+
+if (favorite_fruits.includes('banana')) {
+    console.log("You really like bananas!");
+}
+
+if (favorite_fruits.includes('apple')) {
+    console.log("You really like apples!");
+}
+
+if (favorite_fruits.includes('strawberry')) {
+    console.log("You really like strawberries!");
+}
+
+if (favorite_fruits.includes('orange')) {
+    console.log("You really like oranges!");
+}
+
+if (favorite_fruits.includes('kiwi')) {
+    console.log("You really like kiwis!");
+}
+
+// question 30
+let usernames: string[] = ['admin', 'Eric', 'John', 'Alice', 'Maria'];
+
+for (let i = 0; i < usernames.length; i++) {
+    if (usernames[i] === 'admin') {
+        console.log("Hello admin, would you like to see a status report?");
+    } else {
+        console.log(`Hello ${usernames[i]}, thank you for logging in again.`);
+    }
+}
+
+// question 31
+
+
+
 
 
 
