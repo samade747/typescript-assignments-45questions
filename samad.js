@@ -1,4 +1,13 @@
 // question no 1 installation
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 // question no 2
 // defining the variable & define data type & assign value in it
 var personName = "samad";
@@ -193,3 +202,229 @@ var fruits = ['samad', 'abcd', 'bcdef'];
 console.log(fruits.includes('samad'));
 console.log(fruits.includes('damas'));
 // question 25
+// alein shotdown in a game
+// union type variable hold 3 values
+var alein_color;
+alein_color = "green";
+// alein_color = "yellow"
+var points = 5;
+// checking green color
+if (alein_color === "green") {
+    console.log("congratulations you just earned ".concat(points, " points"));
+}
+// question 26
+var greenPoints = 5;
+var anotherPoints = 10;
+var alien_color1 = "green";
+var alein_colorshoot = "green";
+if (alien_color1 === alein_colorshoot) {
+    console.log("congratulations you have earned ".concat(greenPoints));
+}
+else {
+    console.log("congratulations you have earned ".concat(anotherPoints));
+}
+// question 27 
+// if-else chain.
+var alien_colorh;
+var gpoints = 5;
+var ypoints = 5;
+var rpoints = 5;
+alien_colorh = 'green';
+// alien_colorh = 'yellow';
+// alien_colorh = 'red';
+if (alien_colorh === 'green') {
+    console.log("Congratulations! You just earned ".concat(gpoints, " points for shooting the green alien."));
+}
+else if (alien_colorh === 'yellow') {
+    console.log("Congratulations! You just earned ".concat(ypoints, " points for shooting the yellow alien."));
+}
+else if (alien_colorh === 'red') {
+    console.log("Congratulations! You just earned ".concat(rpoints, " points for shooting the red alien."));
+}
+// question 28
+var age = 5;
+if (age < 0) {
+    console.log("Error: Age cannot be negative.");
+}
+else if (age < 2) {
+    console.log("The person is a baby.");
+}
+else if (age < 13) {
+    console.log("The person is a child.");
+}
+else if (age < 20) {
+    console.log("The person is a teenager.");
+}
+else if (age < 65) {
+    console.log("The person is an adult.");
+}
+else {
+    console.log("The person is a senior citizen.");
+}
+// question 29
+var favorite_fruits = ['banana', 'apple', 'strawberry'];
+if (favorite_fruits.includes('banana')) {
+    console.log("You really like bananas!");
+}
+if (favorite_fruits.includes('apple')) {
+    console.log("You really like apples!");
+}
+if (favorite_fruits.includes('strawberry')) {
+    console.log("You really like strawberries!");
+}
+if (favorite_fruits.includes('orange')) {
+    console.log("You really like oranges!");
+}
+if (favorite_fruits.includes('kiwi')) {
+    console.log("You really like kiwis!");
+}
+// question 30
+var usernames = ['admin', 'Eric', 'John', 'Alice', 'Maria'];
+for (var i = 0; i < usernames.length; i++) {
+    if (usernames[i] === 'admin') {
+        console.log("Hello admin, would you like to see a status report?");
+    }
+    else {
+        console.log("Hello ".concat(usernames[i], ", thank you for logging in again."));
+    }
+}
+// question 31 //
+var usernamescheck = [];
+if (usernamescheck.length === 0) {
+    console.log("We need to find some users!");
+}
+else {
+    for (var _i = 0, usernamescheck_1 = usernamescheck; _i < usernamescheck_1.length; _i++) {
+        var username = usernamescheck_1[_i];
+        if (username === 'admin') {
+            console.log("Hello admin, would you like to see a status report?");
+        }
+        else {
+            console.log("Hello ".concat(username, ", thank you for logging in again."));
+        }
+    }
+}
+// question 32 // 
+var current_users = ['john', 'alice', 'bob', 'mary', 'jane'];
+var new_users = ['eric', 'ALICE', 'john', 'michael', 'susan'];
+var _loop_1 = function (new_user) {
+    var is_existing = current_users.some(function (user) { return user.toLowerCase() === new_user.toLowerCase(); });
+    if (is_existing) {
+        console.log("Sorry, the username \"".concat(new_user, "\" is already taken. Please enter a new username."));
+    }
+    else {
+        console.log("Congratulations! The username \"".concat(new_user, "\" is available."));
+    }
+};
+for (var _a = 0, new_users_1 = new_users; _a < new_users_1.length; _a++) {
+    var new_user = new_users_1[_a];
+    _loop_1(new_user);
+}
+// Question 33 //
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (var _b = 0, numbers_1 = numbers; _b < numbers_1.length; _b++) {
+    var number = numbers_1[_b];
+    var ordinalEnding = void 0;
+    if (number === 1) {
+        ordinalEnding = 'st';
+    }
+    else if (number === 2) {
+        ordinalEnding = 'nd';
+    }
+    else if (number === 3) {
+        ordinalEnding = 'rd';
+    }
+    else {
+        ordinalEnding = 'th';
+    }
+    console.log("".concat(number).concat(ordinalEnding));
+}
+// Queston 34
+var favorite_pizzas = ['Pepperoni', 'Margherita', 'BBQ Chicken'];
+for (var _c = 0, favorite_pizzas_1 = favorite_pizzas; _c < favorite_pizzas_1.length; _c++) {
+    var pizza = favorite_pizzas_1[_c];
+    console.log("I like ".concat(pizza, " pizza."));
+}
+console.log("I really love pizza!");
+// Question 35
+var animals = ['Dog', 'Cat', 'Rabbit'];
+for (var _d = 0, animals_1 = animals; _d < animals_1.length; _d++) {
+    var animal = animals_1[_d];
+    console.log("A ".concat(animal.toLowerCase(), " would make a great pet."));
+}
+console.log("Any of these animals would make a great pet!");
+// Question 36 
+function make_shirt(size, message) {
+    console.log("The shirt size is ".concat(size, " and the message printed on it is: \"").concat(message, "\"."));
+}
+// Calling the function
+make_shirt('XL', 'Keep calm and code on');
+// Question 37
+function makeshirt(size, message) {
+    if (size === void 0) { size = 'large'; }
+    if (message === void 0) { message = 'I love TypeScript'; }
+    console.log("The shirt size is ".concat(size, " and the message printed on it is: \"").concat(message, "\"."));
+}
+// Making small shirt with default message
+makeshirt('large', 'we love you');
+// Making medium shirt with default message
+// makeshirt('medium');
+// Making shirt of any size with a different message
+// makeshirt('small', 'Hello World!');
+// Question 38
+function describe_city(city, country) {
+    if (country === void 0) { country = 'default_country'; }
+    console.log("".concat(city, " is in ").concat(country, "."));
+}
+// Calling the function for three different cities
+describe_city('Karachi', 'Pakistan');
+describe_city('New York', 'USA');
+describe_city('Tokyo');
+// Question 39
+function city_country(city, country) {
+    return "".concat(city, ", ").concat(country);
+}
+var city1 = city_country('Lahore', 'Pakistan');
+var city2 = city_country('New York', 'USA');
+var city3 = city_country('Tokyo', 'Japan');
+console.log(city1);
+console.log(city2);
+console.log(city3);
+// Question 40
+function creatingalbuma(artist, title, tracks) {
+    var album = { artist: artist, title: title };
+    if (tracks !== undefined) {
+        album.tracks = tracks;
+    }
+    return album;
+}
+// question 41
+function show_magicians(magicians) {
+    for (var _i = 0, magiciansa_1 = magiciansa; _i < magiciansa_1.length; _i++) {
+        var magician = magiciansa_1[_i];
+        console.log(magician);
+    }
+}
+var magiciansa = ['Harry', 'farry ', 'very', 'cary'];
+show_magicians(magiciansa);
+// Queston 42
+function show_magiciansh(magicians) {
+    for (var _i = 0, magicians_1 = magicians; _i < magicians_1.length; _i++) {
+        var magician = magicians_1[_i];
+        console.log(magician);
+    }
+}
+function make_great(magicians) {
+    for (var i = 0; i < magicians.length; i++) {
+        magicians[i] = "the Great ".concat(magicians[i]);
+    }
+}
+// Array of magician's names
+var magicians = ['Harry', 'farry ', 'very', 'cary'];
+// Calling the make_great function to modify the list of magicians
+make_great(magicians);
+// Calling the show_magiciansh function to print the modified list of magicians
+show_magiciansh(magicians);
+// Queston 43
+var copymagicines = __spreadArray([], magiciansa, true);
+console.log("copying the array of magicines ".concat(copymagicines));

@@ -487,7 +487,7 @@ function show_magicians(magicians: string[]): void {
     }
 }
 
-let magiciansa: string[] = ['Harry Houdini', 'David Copperfield', 'Penn Jillette', 'Teller'];
+let magiciansa: string[] = ['Harry', 'farry ', 'very', 'cary'];
 show_magicians(magiciansa);
 
 // Queston 42
@@ -505,7 +505,7 @@ function make_great(magicians: string[]): void {
 }
 
 // Array of magician's names
-let magicians: string[] = ['Harry Houdini', 'David Copperfield', 'Penn Jillette', 'Teller'];
+let magicians: string[] = ['Harry', 'farry ', 'very', 'cary'];
 
 // Calling the make_great function to modify the list of magicians
 make_great(magicians);
@@ -516,8 +516,40 @@ show_magiciansh(magicians);
 
 
 // Queston 43
+// copying by speread operter khol ke rakh deta hai ...
+// let copymagicines = [...magiciansa]
 
+// console.log(`copying the array of magicines ${copymagicines}`)
 
+// function make_greats(copymagicines: string[]): string[] {
+//       for (let magician of copymagicines) {
+//         great_magicians.push(`the Great ${magician}`);
+//     }
+//     return great_magicians;
+// }
+// create  a function define 
+function show_magiciansnew(magicianswe: string[]): void {
+    for (let magician of magicianswe) {
+        console.log(magician);
+    }
+}
 
+function make_greatnew(magicianswe: string[]): string[] {
+    let great_magicianswe: string[] = [];
+    for (let magician of magicianswe) {
+        great_magicianswe.push(`the Great ${magician}`);
+    }
+    return great_magicianswe;
+}
+
+let magicianswe: string[] = ['Harry', 'farry ', 'very', 'cary'];
+
+let great_magicians: string[] = make_greatnew([...magicianswe])
+
+// showing the old array 
+show_magiciansnew(magicianswe)
+
+// showing the new array
+show_magicians(great_magicians)
 
 
