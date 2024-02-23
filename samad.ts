@@ -481,13 +481,41 @@ function creatingalbuma(artist: string, title: string, tracks?: number): { artis
 
 // question 41
 
+function show_magicians(magicians: string[]): void {
+    for (let magician of magiciansa) {
+        console.log(magician);
+    }
+}
+
+let magiciansa: string[] = ['Harry Houdini', 'David Copperfield', 'Penn Jillette', 'Teller'];
+show_magicians(magiciansa);
+
+// Queston 42
+
+function show_magiciansh(magicians: string[]): void {
+    for (let magician of magicians) {
+        console.log(magician);
+    }
+}
+
+function make_great(magicians: string[]): void {
+    for (let i = 0; i < magicians.length; i++) {
+        magicians[i] = `the Great ${magicians[i]}`;
+    }
+}
+
+// Array of magician's names
+let magicians: string[] = ['Harry Houdini', 'David Copperfield', 'Penn Jillette', 'Teller'];
+
+// Calling the make_great function to modify the list of magicians
+make_great(magicians);
+
+// Calling the show_magiciansh function to print the modified list of magicians
+show_magiciansh(magicians);
 
 
 
-
-
-
-
+// Queston 43
 
 
 
